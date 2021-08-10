@@ -1,3 +1,5 @@
+@import '_colors';
+
 /* Box sizing rules */
 *,
 *::before,
@@ -16,6 +18,10 @@ html {
 body {
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 500;
+    background-color: $pale_blue;
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 /* Make images easier to work with */
@@ -32,3 +38,8 @@ picture {
     justify-content: center;
 }
 
+@media (min-width: 425px) {
+    body {
+        background-image: url('/images/pattern-background-desktop.svg');
+    }
+}
