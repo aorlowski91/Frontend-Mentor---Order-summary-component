@@ -19,6 +19,7 @@ body {
   background-color: #e0e8ff;
   background-image: url(/images/pattern-background-mobile.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   background-position: top;
 }
 
@@ -45,6 +46,12 @@ picture {
 @media (min-width: 425px) {
   body {
     background-image: url("/images/pattern-background-desktop.svg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 410px;
   }
 }
 
@@ -78,13 +85,19 @@ picture {
   padding: 40px;
 }
 
+.card .card_content .card_text {
+  margin-bottom: 55px;
+}
+
 .card .card_content .card_text h2 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 900;
+  margin-bottom: 15px;
 }
 
 .card .card_content .card_text p {
   font-size: 1rem;
+  font-weight: 500;
   line-height: 1.6rem;
   color: #7280a7;
 }
@@ -115,6 +128,16 @@ picture {
   color: #7280a7;
 }
 
+.card .card_content .card_plan h4, .card .card_content .card_plan p {
+  margin-left: -25px;
+}
+
+.card .card_content .card_plan .plan_link {
+  font-size: .8rem;
+  font-weight: 900;
+  color: #3829e0;
+}
+
 .card .card_buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,14 +156,20 @@ picture {
 .card .card_buttons .payment {
   width: 100%;
   height: 50px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  font-weight: 700;
   color: whitesmoke;
   background-color: #3829e0;
   border-radius: 10px;
-  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 20px 10px -5px rgba(19, 28, 155, 0.2);
+          box-shadow: 0px 20px 10px -5px rgba(19, 28, 155, 0.2);
 }
 
 .card .card_buttons .order {
   background: none;
   color: #7280a7;
+  font-size: .9rem;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
