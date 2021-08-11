@@ -21,6 +21,7 @@ body {
     background-color: $pale_blue;
     background-image: url(/images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: top;
 }
 
@@ -41,5 +42,11 @@ picture {
 @media (min-width: 425px) {
     body {
         background-image: url('/images/pattern-background-desktop.svg');
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        width: 410px;
     }
 }
