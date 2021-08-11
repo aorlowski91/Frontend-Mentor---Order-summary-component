@@ -21,13 +21,17 @@
         padding: 40px;
 
         .card_text {
+            margin-bottom: 55px;
+
             h2 {
-                font-size: 1.3rem;
+                font-size: 1.4rem;
                 font-weight: 900;
+                margin-bottom: 15px;
             }
 
             p {
                 font-size: 1rem;
+                font-weight: 500;
                 line-height: 1.6rem;
                 color: $desaturated_blue;
             }
@@ -48,6 +52,16 @@
                 font-size: .9rem;
                 color: $desaturated_blue;
             }
+
+            h4, p {
+                margin-left: -25px;
+            }
+
+            .plan_link {
+                font-size: .8rem;
+                font-weight: 900;
+                color: $bright_blue;
+            }
         }
     }
 
@@ -63,15 +77,20 @@
         .payment {
             width: 100%;
             height: 50px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            font-weight: 700;
             color: whitesmoke;
             background-color: $bright_blue;
             border-radius: 10px;
-            margin-bottom: 20px;
+            box-shadow: 0px 20px 10px -5px rgba(19, 28, 155, 0.2);
         }
 
         .order {
             background: none;
             color: $desaturated_blue;
+            font-size: .9rem;
+            font-weight: 700;
         }
     }
 }
